@@ -1,4 +1,4 @@
-# Tesseract OCR Image To String using C# Winform
+# TabControl
 
 ![Image](1.PNG)
 
