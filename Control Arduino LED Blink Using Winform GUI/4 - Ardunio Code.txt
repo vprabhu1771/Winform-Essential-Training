@@ -1,0 +1,33 @@
+char userInput;
+
+void setup()
+{
+
+  //  setup serial
+  Serial.begin(9600);
+
+  pinMode(LED_BUILTIN, OUTPUT);
+
+}
+
+
+void loop(){
+  
+  if(Serial.available()> 0){ 
+        
+    // read user input
+    userInput = Serial.read();               
+      
+    if(userInput == 'o')
+    {
+      digitalWrite(LED_BUILTIN, HIGH); 
+    }
+
+    if(userInput == 'x')
+    {
+      digitalWrite(LED_BUILTIN, LOW);         
+    }
+
+  }
+
+}

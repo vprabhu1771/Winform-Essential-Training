@@ -1,0 +1,45 @@
+namespace HelloWorldApp
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {           
+            CreateCheckBox("C");
+            CreateCheckBox("C++");
+            CreateCheckBox("Java");
+            CreateCheckBox("Python");
+
+            // Set Window Title
+            this.Text = "Check Button Example";
+
+            // Set Window Width and Height         
+            this.Width = 400;
+            this.Height = 280;
+        }
+
+
+
+        private void CreateCheckBox(string text)
+        {
+            CheckBox checkBox = new CheckBox();
+            checkBox.Text = text;
+            checkBox.AutoSize = true;
+            checkBox.Location = new System.Drawing.Point(20, Controls.Count * 25);
+            checkBox.Click += CheckBox_Click; // Attach event handler
+            Controls.Add(checkBox);
+        }
+
+        private void CheckBox_Click(object sender, EventArgs e)
+        {
+            CheckBox checkBox = sender as CheckBox;
+            if (checkBox.Checked)
+            {
+                MessageBox.Show($"You selected {checkBox.Text}.");
+            }
+            else
+            {
+                MessageBox.Show($"You deselected {checkBox.Text}.");
+            }
+        }
+    }
+}

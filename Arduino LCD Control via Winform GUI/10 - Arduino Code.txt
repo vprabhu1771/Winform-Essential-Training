@@ -1,0 +1,40 @@
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+void setup() 
+{
+
+  lcd.init();
+
+  lcd.backlight();
+
+  lcd.print("Hello World!");
+
+  // Start serial communication
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+
+  if (Serial.available()) 
+  {
+    
+    // Read the incoming data
+    String receivedData = Serial.readString();
+    
+    // Clear the LCD
+    lcd.clear();
+    
+    // Set cursor to the beginning of the first line
+    lcd.setCursor(0, 0);
+
+    // Print the received data on the LCD
+    lcd.print(receivedData);
+    
+  }
+  
+  // Your other loop code here...
+}
