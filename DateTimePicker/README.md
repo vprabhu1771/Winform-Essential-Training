@@ -1,4 +1,4 @@
-# Tesseract OCR Image To String using C# Winform
+# DateTimePicker
 
 ![Image](1.PNG)
 
