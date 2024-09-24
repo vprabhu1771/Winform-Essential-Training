@@ -1,0 +1,45 @@
+# 3 - Button
+
+![Image](1.PNG)
+
+![Image](2.PNG)
+
+![Image](3.PNG)
+
+![Image](4.PNG)
+
+5 - `MainForm.cs`
+
+```
+namespace HelloWorldApp
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+
+            // Set Window Title
+            this.Text = "Hello World!";
+
+            // Set Window Width and Height         
+            this.Width = 400;
+            this.Height = 200;
+
+            // or
+
+            // Set Window Width and Height
+            Size = new Size(400, 200);
+        }
+
+        private void say_hello(object sender, EventArgs e)
+        {           
+            MessageBox.Show("Hello, Winform");
+        }
+    }
+}
+```
+
+```
+Project Properties -> Application -> Output Type -> Windows Application
+```
