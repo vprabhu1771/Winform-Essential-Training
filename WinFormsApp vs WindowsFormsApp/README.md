@@ -145,3 +145,12 @@ If you tell me your **project type** (e.g., hardware control with ADB, serial co
 I can recommend the **best runtime version** (like .NET 6 vs .NET 8) and Visual Studio template.
 
 Would you like me to help you choose the **exact .NET version** for your WinForms project?
+
+
+![Image](1-Old.PNG)
+![Image](2-Old.PNG)
+![Image](3-Old.PNG)
+![Image](1-New.PNG)
+![Image](2-New.PNG)
+![Image](3-New.PNG)
+![Image](4-New.PNG)
