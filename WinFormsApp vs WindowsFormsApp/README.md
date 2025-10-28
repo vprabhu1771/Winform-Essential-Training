@@ -75,7 +75,7 @@ Let me know if you'd like a video-style guide, sample code, or migration between
 
 
 
-#
+# Windows Forms comparison
 
 Good question 👍 — this is **one of the most important choices** when starting a new C# WinForms project. Let’s break it down clearly so you can pick **the best one for your needs**.
 
