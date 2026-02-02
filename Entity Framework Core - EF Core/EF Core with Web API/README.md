@@ -69,3 +69,59 @@ app.MapGet("/categories", () => categories)
 
 app.Run();
 ```
+
+```json
+[
+  "Monitor",
+  "CPU",
+  "Keyboard",
+  "Mouse",
+  "UPS",
+  "Ink Tank Printer"
+]
+```
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
+app.UseHttpsRedirection();
+
+app.MapGet("/", () => "Server is running!");
+
+// Sample categories
+var categories = new[]
+{
+    "Monitor", "CPU", "Keyboard", "Mouse", "UPS", "Ink Tank Printer"
+};
+
+// Return categories in "data" field
+app.MapGet("/categories", () => new { data = categories })
+   .WithName("GetCategories");
+
+app.Run();
+```
+
+```json
+{
+  "data": [
+    "Monitor",
+    "CPU",
+    "Keyboard",
+    "Mouse",
+    "UPS",
+    "Ink Tank Printer"
+  ]
+}
+```
