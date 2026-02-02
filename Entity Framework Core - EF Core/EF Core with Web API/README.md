@@ -38,6 +38,8 @@ Open:
 https://localhost:xxxx/swagger
 ```
 
+# Type 1
+
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
@@ -80,6 +82,8 @@ app.Run();
   "Ink Tank Printer"
 ]
 ```
+
+# Type 2
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
