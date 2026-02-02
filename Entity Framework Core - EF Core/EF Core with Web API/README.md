@@ -37,3 +37,35 @@ Open:
 ```
 https://localhost:xxxx/swagger
 ```
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
+app.UseHttpsRedirection();
+
+app.MapGet("/", () => "Server is running!");
+
+// Sample categories
+var categories = new[]
+{
+    "Monitor", "CPU", "Keyboard", "Mouse", "UPS", "Ink Tank Printer"
+};
+
+// Fixed categories endpoint
+app.MapGet("/categories", () => categories)
+   .WithName("GetCategories"); // renamed for clarity
+
+app.Run();
+```
