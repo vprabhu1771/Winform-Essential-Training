@@ -5,6 +5,10 @@ Download and Install Report Viewer for Visual Studio 2022
 https://www.youtube.com/watch?v=K4JIJOj2ffA
 ```
 
+Microsoft.ReportingServices.ReportViewerControl.Winforms 
+```
+https://www.nuget.org/packages/Microsoft.ReportingServices.ReportViewerControl.Winforms
+```
 ---
 
 ## 🛠️ What “Report Viewer” Is
