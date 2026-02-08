@@ -1,5 +1,10 @@
 Here’s how to **download and install Report Viewer for Visual Studio** so you can preview/print RDLC reports in your projects.
 
+Download and Install Report Viewer for Visual Studio 2022
+```
+https://www.youtube.com/watch?v=K4JIJOj2ffA
+```
+
 ---
 
 ## 🛠️ What “Report Viewer” Is
