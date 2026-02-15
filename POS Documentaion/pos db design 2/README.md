@@ -75,6 +75,12 @@ FOREIGN KEY (sale_id) REFERENCES sales(id)
 ON DELETE CASCADE;
 
 
+CREATE TABLE activation (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    serial_key VARCHAR(20),
+    is_activated INT DEFAULT(0),
+);
+
 ```
 
 🔥 Proper Payment Mode popup (Cash / UPI / Card / Credit)
