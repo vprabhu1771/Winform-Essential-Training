@@ -1,0 +1,24 @@
+🔎 Auto search customer by mobile
+
+📱 Popup customer search window
+
+🧾 Save customer with bill
+
+🏪 Loyalty points system
+
+💳 Customer credit balance
+
+🧾 Show last 5 bills of selected customer
+
+🎁 Loyalty points system
+
+📊 Customer purchase history popup
+
+📱 Auto create customer when entering new mobile
+
+
+🧾 Pharmacy-specific GST logic (India)
+
+🍽️ Restaurant KOT architecture
+
+Tell me what level POS you're building (Retail / Supermarket / Pharmacy / Restaurant) — I’ll design next feature properly 🚀
