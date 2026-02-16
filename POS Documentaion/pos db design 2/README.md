@@ -45,7 +45,7 @@ VALUES
 
 CREATE TABLE sales (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    bill_no VARCHAR(20),
+    bill_no VARCHAR(50),
     sale_date DATETIME,
     customer_id INT,
     total_items INT,
@@ -53,7 +53,10 @@ CREATE TABLE sales (
     discount DECIMAL(10,2),
     grand_total DECIMAL(10,2),
     payment_mode VARCHAR(20),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    cash_amount DECIMAL(10,2) DEFAULT 0,
+    card_amount DECIMAL(10,2) DEFAULT 0,
+    upi_amount DECIMAL(10,2) DEFAULT 0,
+    status VARCHAR(20) DEFAULT 'Completed'
 );
 
 CREATE TABLE sale_items (
