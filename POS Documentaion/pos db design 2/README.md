@@ -65,7 +65,7 @@ CREATE TABLE sale_items (
     qty DECIMAL(10,2),
     rate DECIMAL(10,2),
     discount DECIMAL(10,2),
-    total DECIMAL(10,2),
+    total DECIMAL(10,2)
     -- FOREIGN KEY (sale_id) REFERENCES sales(id)
 );
 
