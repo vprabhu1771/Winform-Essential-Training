@@ -56,7 +56,10 @@ CREATE TABLE sales (
     cash_amount DECIMAL(10,2) DEFAULT 0,
     card_amount DECIMAL(10,2) DEFAULT 0,
     upi_amount DECIMAL(10,2) DEFAULT 0,
-    status VARCHAR(20) DEFAULT 'Completed'
+    status VARCHAR(20) DEFAULT 'Completed',
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 CREATE TABLE sale_items (
