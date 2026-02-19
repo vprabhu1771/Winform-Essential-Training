@@ -3,6 +3,27 @@ CREATE DATABASE laravel_pos;
 USE laravel_pos;
 
 
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE brands (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE units (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
 CREATE TABLE customers (
     id INT AUTO_INCREMENT PRIMARY KEY,
     
@@ -11,6 +32,10 @@ CREATE TABLE customers (
     name VARCHAR(150) NOT NULL,
     mobile VARCHAR(15) NULL,
     email VARCHAR(100) NULL,
+
+    contact_type VARCHAR(255), --- Suppliers, Customers, Both (Supplier & Customer)
+
+    type VARCHAR(255), --- Individual, Business
     
     gst_number VARCHAR(20) NULL,            -- For business customers
     address TEXT NULL,
