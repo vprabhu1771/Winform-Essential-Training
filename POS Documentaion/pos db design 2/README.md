@@ -18,6 +18,10 @@ CREATE TABLE customers (
     name VARCHAR(150) NOT NULL,
     mobile VARCHAR(15) NULL,
     email VARCHAR(100) NULL,
+
+    contact_type VARCHAR(255), --- Suppliers, Customers, Both (Supplier & Customer)
+
+    type VARCHAR(255), --- Individual, Business
     
     gst_number VARCHAR(20) NULL,            -- For business customers
     address TEXT NULL,
