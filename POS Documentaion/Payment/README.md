@@ -195,3 +195,5 @@ namespace winform_bughunt_pos
     }
 }
 ```
+
+![Image](Payment.PNG)
