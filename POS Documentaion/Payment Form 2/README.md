@@ -273,3 +273,7 @@ Benefits:
 * 🎯 **Keyboard shortcuts (F1–F6)**
 
 Just say **“Full POS payment component architecture”**.
+
+![Image](1.PNG)
+![Image](custom.PNG)
+![Image](custom3.PNG)
