@@ -30,7 +30,7 @@ namespace POS.Helpers
             _defaultConverter = new CurrencyWordsConverter(
                 new CurrencyWordsConversionOptions()
                 {
-                    Culture = Culture.English,
+                    Culture = Culture.Nepali,
                     OutputFormat = OutputFormat.English
                 });
         }
