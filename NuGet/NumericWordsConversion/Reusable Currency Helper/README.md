@@ -7,7 +7,7 @@ Let’s wrap it into a **clean, reusable helper class** for your POS system with
 
 ```csharp
 using System;
-using CurrencyToWords; // adjust namespace based on your package
+using NumericWordsConversion;
 
 namespace POS.Helpers
 {
