@@ -1,3 +1,12 @@
+```
+https://www.nuget.org/packages/ESCPOS_NET/
+```
+
+# Thermal Printer TVS RP3200 Plus How To Set IP & Configure Thermal LAN Printer TVSRp3200Plus Install 
+```
+https://www.youtube.com/watch?v=G9swZ27qL9k
+```
+
 ```csharp
 using ESCPOS_NET;
 using ESCPOS_NET.Emitters;
